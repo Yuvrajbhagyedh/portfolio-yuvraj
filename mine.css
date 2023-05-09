@@ -1,0 +1,143 @@
+header {
+  padding: 3rem;
+
+  border-top-right-radius: 0.9rem;
+  background-color: rgb(109, 72, 152);
+}
+body {
+  height: auto;
+  background-color: rgb(224, 219, 219);
+  color: #0d0d0d;
+}
+.navigation {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem;
+  border-bottom-left-radius: 1rem;
+}
+.navigation .link {
+  color: rgb(196, 28, 28);
+}
+.navigation .nav-pills {
+  text-align: right;
+}
+
+.navigation .brand {
+  font-weight: bold;
+}
+
+.navigation .link-active {
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+
+  margin-top: 60px;
+  text-align: center;
+}
+p {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+}
+footer {
+  background-color: #a60c0c;
+  color: #fff;
+  padding: 30px 0;
+  margin-top: 250px;
+}
+
+.sm {
+  margin-right: 40px;
+  display: flex;
+  display: inline-block;
+  width: 30%;
+  margin-bottom: 0px;
+}
+
+.em,
+.a {
+  text-shadow: 0 0 30px #907a7a;
+}
+hr.em {
+  transform: rotate(90deg);
+}
+
+.link {
+  color: black;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+nav {
+  background-color: rgb(109, 72, 152);
+  display: flex;
+  justify-content: right;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: solid burlywood;
+  font-size: 20px;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+}
+footer {
+  justify-content: right;
+  display: flex;
+  background-color: rgb(149, 133, 133);
+  padding: 2rem;
+  border-top-right-radius: 0.9rem;
+  text-align: center;
+  color: aliceblue;
+  font-size: 30px;
+}
+
+.in {
+  box-shadow: #333;
+  height: 20%;
+  background-color: rgb(149, 133, 133);
+}
+
+.foot {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: left;
+  margin-left: 0%;
+  margin-right: 25%;
+}
+img,
+:hover {
+  transition: none 0.2s ease-in-out;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  transform: matrix3d();
+}
+.cafe {
+  background-image: url(image/coffee-beans-close-up.jpg);
+  background-color: #0d0d0d;
+  padding: 3rem;
+  border-top-right-radius: 3rem;
+}
+.menu {
+  background-image: url(image/coffee-beans-close-up.jpg);
+}
+hr.u {
+  transform: rotate(90deg);
+}
