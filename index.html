@@ -1,56 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>College Website</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 class="three-d-font">Calculator</h1>
-    <div class="container">
-      <div class="calculator">
-        <form>
-          <div class="view">
-            <input type="text" name="display" />
-          </div>
-          <div>
-            <input type="button" value="AC" onclick="display.value='' " />
-            <input type="button" value="%" onclick="display.value+='%'" />
-            <input type="button" value="." onclick="display.value+='.'" />
-            <input type="button" value="/" onclick="display.value+='/' " />
-          </div>
-          <div>
-            <input type="button" value="7" onclick="display.value+='7'" />
-            <input type="button" value="8" onclick="display.value+='8'" />
-            <input type="button" value="9" onclick="display.value+='9'" />
-            <input type="button" value="*" onclick="display.value+='*' " />
-          </div>
-          <div>
-            <input type="button" value="4" onclick="display.value+='4'" />
-            <input type="button" value="5" onclick="display.value+='5' " />
-            <input type="button" value="6" onclick="display.value+='6'" />
-            <input type="button" value="-" onclick="display.value+='-'" />
-          </div>
-          <div>
-            <input type="button" value="1" onclick="display.value+='1'" />
-            <input type="button" value="2" onclick="display.value+='2'" />
-            <input type="button" value="3" onclick="display.value+='3'" />
-            <input type="button" value="+" onclick="display.value+='+'" />
-          </div>
-          <div>
-            <input type="button" value="00" onclick="display.value='00'" />
-            <input type="button" value="0" onclick="display.value+='0'" />
-            <input
-              class="equal"
-              type="button"
-              value="="
-              onclick="display.value=eval(display.value)"
-            />
-          </div>
-        </form>
-      </div>
-    </div>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a class="logo" href="https://caias.in/sdas"
+              ><img
+                src="data:image/jpeg;base64,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"
+                alt=""
+                width="20%"
+                height="auto"
+            /></a>
+          </li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Programs</a></li>
+
+          <li><a href="#">Admissions</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <h1>Welcome to Our College</h1>
+      <p>Tagline or brief description of your college.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        Provide information about your college, its history, mission, values,
+        and achievements.
+      </p>
+    </section>
+
+    <section id="programs">
+      <h2>Programs</h2>
+      <p>
+        Highlight the academic programs offered by your college. Include
+        information about the departments, majors, minors, and any unique
+        features of the programs.
+      </p>
+    </section>
+
+    <section id="faculty">
+      <h2>Faculty</h2>
+      <p>
+        Showcase your college's faculty members, their expertise, research
+        interests, and any notable achievements.
+      </p>
+    </section>
+
+    <section id="admissions">
+      <h2>Admissions</h2>
+      <p>
+        Provide information about the admissions process, requirements,
+        deadlines, and any specific instructions for prospective students.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>
+        Include contact information such as phone numbers, email addresses, and
+        a contact form for general inquiries or feedback.
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Your College. All rights reserved.</p>
+    </footer>
   </body>
 </html>
